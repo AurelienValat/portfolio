@@ -3,6 +3,7 @@
 
 import Link from 'next/link'
 import { ThemeToggle } from '../ThemeToggle'
+import { LocaleSwitcher } from './LocaleSwitcher'
 
 export function Navbar() {
     return (
@@ -28,15 +29,17 @@ export function Navbar() {
                             Contact
                         </Link>
 
-                        <div className="pl-4 border-l border-slate-200 dark:border-slate-800">
+                        {/* Gestion thème sombre / clair* et langue */}
+                        <div className="flex items-center gap-2 pl-4 border-l border-slate-200 dark:border-slate-800">
+                            <LocaleSwitcher />
                             <ThemeToggle />
                         </div>
                     </div>
 
-                    {/* Version Mobile (Simplifiée pour l'instant) */}
+                    {/* Version Mobile */}
                     <div className="md:hidden flex items-center gap-4">
                         <ThemeToggle />
-                        {/* On pourra ajouter un menu burger plus tard */}
+                        {/* Menu burger plus tard */}
                     </div>
                 </div>
             </div>

@@ -2,21 +2,19 @@
 import { getRequestConfig } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 
-// On définit nos langues supportées
 export const locales = ['fr', 'en'] as const;
 
-export default getRequestConfig(async ({ locale }) => {
-    // On attend la locale
-    const resolvedLocale = await locale;
+export default getRequestConfig(async ({ requestLocale }) => { // Utilisation de requestLocale
+    // On attend que la locale soit résolue
+    const locale = await requestLocale;
 
-    // Si resolvedLocale est undefined ou n'est pas dans notre liste, on renvoie une erreur 404
-    if (!resolvedLocale || !locales.includes(resolvedLocale as any)) {
+    // Vérification de sécurité
+    if (!locale || !locales.includes(locale as any)) {
         notFound();
     }
 
     return {
-        // On passe la locale confirmée à next-intl
-        locale: resolvedLocale,
-        messages: (await import(`./messages/${resolvedLocale}.json`)).default
+        locale,
+        messages: (await import(`./messages/${locale}.json`)).default
     };
 });
