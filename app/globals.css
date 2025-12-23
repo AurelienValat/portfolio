@@ -1,14 +1,15 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
 :root {
     --foreground-rgb: 15, 23, 42;
     --background-rgb: 248, 250, 252;
 }
 
-html {
-    scroll-behavior: smooth;
+body {
+    @apply transition-colors duration-300;
 }
 
-body {
-    color: rgb(var(--foreground-rgb));
-    background: rgb(var(--background-rgb));
+.dark {
+    color-scheme: dark;
 }

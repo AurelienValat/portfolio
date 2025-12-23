@@ -1,5 +1,6 @@
-// app/page.tsx
+// app/[locale]/page.tsx
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 export default function Home() {
     return (
@@ -7,8 +8,8 @@ export default function Home() {
             <section className="max-w-3xl text-center">
                 {/* Badge pour recherche alternance */}
                 <span className="px-3 py-1 text-sm font-medium text-blue-600 bg-blue-100 rounded-full">
-          Disponible pour une alternance
-        </span>
+                    Disponible pour une alternance
+                </span>
 
                 <h1 className="mt-6 text-5xl font-extrabold tracking-tight sm:text-7xl">
                     <span className="text-blue-600 ">Aurélien Valat</span>
