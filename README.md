@@ -20,11 +20,6 @@ Ce projet est un portfolio construit avec **Next.js 16**, **React 19** et **Tail
 * **Routing Dynamique** : Utilisation du segment `[locale]` pour une gestion propre des URLs par langue.
 
 
-## 📝 URL du site 
-
-https://portfolio-fzyo18p9e-aurelienvalats-projects.vercel.app/fr
-
-
 ## 📦 Installation locale et Lancement
 
 1.  **Cloner le dépôt** :
