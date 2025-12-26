@@ -4,5 +4,43 @@
     "description": "Étudiant en Licence 3 MIAGE (Méthodes Informatiques Appliquées à la Gestion des Entreprises)",
     "projectsBtn": "Voir mes projets",
     "contactBtn": "Me contacter"
+  },
+
+  "Projects": {
+    "title": "Mes Projets",
+    "viewProject": "Voir le projet",
+    "items": {
+      "portfolio": {
+        "title": "Portfolio Next.js",
+        "description": "Un portfolio moderne avec gestion de thèmes et multilingue.",
+        "tags": ["Next.js", "Tailwind", "TypeScript"],
+        "link": "https://github.com/AurelienValat/portfolio",
+        "image": "/images/portfolio.png"
+      },
+      "project2": {
+        "title": "En construction",
+        "description": "",
+        "tags": [""],
+        "link": "",
+        "image": ""
+      }
+    }
+  },
+
+  "Contact": {
+    "title": "Contact",
+    "description": "N'hésitez pas à me contacter !",
+    "name": "Nom",
+    "email": "Email",
+    "subject": "Objet",
+    "message": "Message",
+    "placeholderName": "Votre nom",
+    "placeholderEmail": "votre@email.com",
+    "placeholderSubject": "Sujet de votre message",
+    "placeholderMessage": "Comment puis-je vous aider ?",
+    "send": "Envoyer le message",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé avec succès !",
+    "error": "Une erreur est survenue, veuillez réessayer."
   }
 }

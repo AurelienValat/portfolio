@@ -44,7 +44,7 @@ Ce projet est un portfolio construit avec **Next.js 16**, **React 19** et **Tail
 * `app/[locale]/` : Contient les routes principales de l'application encapsulées par la locale.
 * `components/` : Composants React réutilisables (Navbar, ThemeToggle, etc.).
 * `messages/` : Fichiers de traduction JSON (`fr.json`, `en.json`).
-* `i18n.ts` & `middleware.ts` : Configuration centrale de l'internationalisation et du routage.
+* `i18n.ts` & `proxy.ts` : Configuration centrale de l'internationalisation et du routage.
 * `next.config.ts` : Configuration Next.js incluant le plugin `next-intl`.
 
 ## 🛠 Configuration I18n

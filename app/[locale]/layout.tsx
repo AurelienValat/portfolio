@@ -1,7 +1,7 @@
 // app/[locale]/layout.tsx
 import "../globals.css";
 import { Inter } from 'next/font/google';
-import { ThemeProvider } from '@/components/theme-provider';
+import { ThemeProvider } from '@/components/Theme-provider';
 import { Navbar } from '@/components/layout/Navbar';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
@@ -25,7 +25,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
             <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
                 <Navbar />
-                <main className="min-h-screen">
+                <main className="min-h-[calc(100vh-65px)]">
                     {children}
                 </main>
             </ThemeProvider>

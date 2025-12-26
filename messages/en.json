@@ -4,5 +4,43 @@
     "description": "L3 MIAGE Student (Business Informatics)",
     "projectsBtn": "View my projects",
     "contactBtn": "Contact me"
+  },
+
+  "Projects": {
+    "title": "My Projects",
+    "viewProject": "View Project",
+    "items": {
+      "portfolio": {
+        "title": "Next.js Portfolio",
+        "description": "A modern portfolio with theme management and multilingual support.",
+        "tags": ["Next.js", "Tailwind", "TypeScript"],
+        "link": "https://github.com/AurelienValat/portfolio",
+        "image": "/images/portfolio.png"
+      },
+      "project2": {
+        "title": "Under construction",
+        "description": "",
+        "tags": [""],
+        "link": "",
+        "image": ""
+      }
+    }
+  },
+
+  "Contact": {
+    "title": "Contact",
+    "description": "Feel free to contact me!",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "placeholderName": "Your name",
+    "placeholderEmail": "your@email.com",
+    "placeholderSubject": "Subject of your message",
+    "placeholderMessage": "How can I help you?",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "An error occurred, please try again."
   }
 }
