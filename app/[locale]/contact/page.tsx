@@ -10,7 +10,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
 
 
     return (
-        <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center justify-center min-h-[calc(100vh-80px)] px-4 pt-20 pb-12">
             {/* En-tête de la page */}
             <div className="max-w-2xl mx-auto text-center mb-12">
                 <h1 className="text-4xl font-extrabold mb-4">{t('title')}</h1>
@@ -20,7 +20,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
             </div>
 
             {/* Conteneur du formulaire */}
-            <div className="max-w-xl mx-auto bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-8 shadow-sm">
+            <div className="w-full max-w-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 sm:p-8 shadow-sm">
                 <ContactForm />
             </div>
         </div>

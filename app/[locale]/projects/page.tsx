@@ -12,7 +12,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
 
     // On transforme l'objet JSON en tableau pour mapper dessus
     // Ajouter chaque nouveau projet en + du .json
-    const projectKeys = ['portfolio', 'project2'] as const;
+    const projectKeys = ['portfolio', 'cyclology', 'project3'] as const;
 
     return (
         <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
@@ -28,6 +28,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
                         linkText={t('viewProject')}
                         href={t(`items.${key}.link`)}
                         imageSrc={t(`items.${key}.image`)}
+                        cardTitle={t('cardHover')}
                     />
                 ))}
             </div>

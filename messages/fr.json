@@ -1,4 +1,10 @@
 {
+  "Navbar": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+
   "Hero": {
     "badge": "Disponible pour une alternance",
     "description": "Étudiant en Licence 3 MIAGE (Méthodes Informatiques Appliquées à la Gestion des Entreprises)",
@@ -9,6 +15,7 @@
   "Projects": {
     "title": "Mes Projets",
     "viewProject": "Voir le projet",
+    "cardHover": "Cliquez pour voir un aperçu du projet",
     "items": {
       "portfolio": {
         "title": "Portfolio Next.js",
@@ -17,8 +24,15 @@
         "link": "https://github.com/AurelienValat/portfolio",
         "image": "/images/portfolio.png"
       },
-      "project2": {
-        "title": "En construction",
+      "cyclology": {
+        "title": "Cyclology",
+        "description": "PWA permettant aux cyclistes d'enregistrer, de suivre et de visualiser sur une carte tous les cols gravis.",
+        "tags": ["JavaScript", "HTML", "CSS"],
+        "link": "https://github.com/Aurelien-Valat/cyclology",
+        "image": "/images/cyclology.png"
+      },
+      "project3": {
+        "title": "...",
         "description": "",
         "tags": [""],
         "link": "",

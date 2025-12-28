@@ -1,4 +1,10 @@
 {
+  "Navbar": {
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+
   "Hero": {
     "badge": "Available for apprenticeship",
     "description": "L3 MIAGE Student (Business Informatics)",
@@ -9,6 +15,7 @@
   "Projects": {
     "title": "My Projects",
     "viewProject": "View Project",
+    "cardHover": "Click to see a preview of the project",
     "items": {
       "portfolio": {
         "title": "Next.js Portfolio",
@@ -17,8 +24,15 @@
         "link": "https://github.com/AurelienValat/portfolio",
         "image": "/images/portfolio.png"
       },
-      "project2": {
-        "title": "Under construction",
+      "cyclology": {
+        "title": "Cyclology",
+        "description": "PWA allowing cyclists to record, track and view on a map all the mountain passes climbed.",
+        "tags": ["JavaScript", "HTML", "CSS"],
+        "link": "https://github.com/Aurelien-Valat/cyclology",
+        "image": "/images/cyclology.png"
+      },
+      "project3": {
+        "title": "...",
         "description": "",
         "tags": [""],
         "link": "",

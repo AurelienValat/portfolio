@@ -4,8 +4,10 @@
 import Link from 'next/link'
 import { ThemeToggle } from '../ThemeToggle'
 import { LocaleSwitcher } from './LocaleSwitcher'
+import { useTranslations } from 'next-intl'
 
 export function Navbar() {
+    const t = useTranslations('Navbar');
     return (
         <nav className="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-white/75 dark:bg-slate-950/75 backdrop-blur-md">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,19 +19,19 @@ export function Navbar() {
                         </Link>
                     </div>
 
-                    {/* Liens de navigation - Desktop */}
+                    {/* Liens de navigation */}
                     <div className="hidden md:flex items-center space-x-8">
                         <Link href="/" className="text-sm font-medium hover:text-blue-600 transition-colors">
-                            Accueil
+                            {t('home')}
                         </Link>
                         <Link href="/projects" className="text-sm font-medium hover:text-blue-600 transition-colors">
-                            Projets
+                            {t('projects')}
                         </Link>
                         <Link href="/contact" className="text-sm font-medium hover:text-blue-600 transition-colors">
-                            Contact
+                            {t('contact')}
                         </Link>
 
-                        {/* Gestion thème sombre / clair* et langue */}
+                        {/* Gestion thème sombre / clair et langue */}
                         <div className="flex items-center gap-2 pl-4 border-l border-slate-200 dark:border-slate-800">
                             <LocaleSwitcher />
                             <ThemeToggle />

@@ -16,7 +16,7 @@ export function ContactForm() {
     });
 
     //pour suivre le statut de l'envoi
-    const [status] = useState<"idle" | "loading" | "success" | "error">("idle");
+    const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
     // Cette fonction s'exécute à chaque fois qu'une touche est pressée dans un champ
     const handleChange = (
@@ -32,8 +32,30 @@ export function ContactForm() {
         }));
     };
 
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setStatus("loading");
+
+        try {
+            const response = await fetch('/api/send', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                setStatus("success");
+                setFormData({ name: "", email: "", subject: "", message: "" });
+            } else {
+                setStatus("error");
+            }
+        } catch (error) {
+            setStatus("error");
+        }
+    };
+
     return (
-        <form className="space-y-6 max-w-xl mx-auto">
+        <form onSubmit={handleSubmit} className="space-y-6 max-w-xl mx-auto">
             {/* Champ Nom */}
             <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">

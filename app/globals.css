@@ -13,3 +13,7 @@ body {
 .dark {
     color-scheme: dark;
 }
+html {
+    /* espace pour scrollbar pour éviter décalages */
+    scrollbar-gutter: stable;
+}
