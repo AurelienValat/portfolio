@@ -11,6 +11,7 @@ Ce projet est un portfolio construit avec **Next.js 16**, **React 19** et **Tail
 * **Icônes** : [Lucide React](https://lucide.dev/)
 * **Thème** : [next-themes](https://github.com/pacocoursey/next-themes) (Support mode sombre/clair)
 * **Typographie** : Police Inter (via Next Font)
+* **Email de contact** : [Resend](https://resend.com/)
 
 ## ✨ Fonctionnalités
 
