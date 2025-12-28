@@ -10,7 +10,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
 
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-[calc(100vh-80px)] px-4 pt-20 pb-12">
+        <div className="flex flex-col items-center justify-center min-h-[calc(100vh-80px)] max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
             {/* En-tête de la page */}
             <div className="max-w-2xl mx-auto text-center mb-12">
                 <h1 className="text-4xl font-extrabold mb-4">{t('title')}</h1>
