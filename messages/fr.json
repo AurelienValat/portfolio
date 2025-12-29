@@ -28,7 +28,7 @@
         "title": "Cyclology",
         "description": "PWA permettant aux cyclistes d'enregistrer, de suivre et de visualiser sur une carte tous les cols gravis.",
         "tags": ["JavaScript", "HTML", "CSS"],
-        "link": "https://github.com/Aurelien-Valat/cyclology",
+        "link": "https://github.com/AurelienValat/cyclology",
         "image": "/images/cyclology.png"
       },
       "project3": {

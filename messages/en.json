@@ -28,7 +28,7 @@
         "title": "Cyclology",
         "description": "PWA allowing cyclists to record, track and view on a map all the mountain passes climbed.",
         "tags": ["JavaScript", "HTML", "CSS"],
-        "link": "https://github.com/Aurelien-Valat/cyclology",
+        "link": "https://github.com/AurelienValat/cyclology",
         "image": "/images/cyclology.png"
       },
       "project3": {
