@@ -12,7 +12,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
 
     // On transforme l'objet JSON en tableau pour mapper dessus
     // Ajouter chaque nouveau projet en + du .json
-    const projectKeys = ['portfolio', 'cyclology', 'project3'] as const;
+    const projectKeys = ['portfolio', 'cyclology', 'hanabi'] as const;
 
     return (
         <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">

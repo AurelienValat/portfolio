@@ -31,12 +31,12 @@
         "link": "https://github.com/AurelienValat/cyclology",
         "image": "/images/cyclology.png"
       },
-      "project3": {
-        "title": "...",
-        "description": "",
-        "tags": [""],
-        "link": "",
-        "image": ""
+      "hanabi": {
+        "title": "Hanabi",
+        "description": "Java-based recreation of the Hanabi board game (1st-year academic project)",
+        "tags": ["Java", "JavaFX"],
+        "link": "https://github.com/JulesVialas/Hanabi-Java.git",
+        "image": "/images/hanabi.png"
       }
     }
   },
