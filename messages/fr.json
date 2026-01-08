@@ -33,10 +33,24 @@
       },
       "hanabi": {
         "title": "Hanabi",
-        "description": "Projet de 1ère année de BUT Informatique de créaction du jeu de société Hanabi en Java.",
+        "description": "Projet de 1ère année de BUT Informatique de création du jeu de société Hanabi en Java.",
         "tags": ["Java", "JavaFX"],
         "link": "https://github.com/JulesVialas/Hanabi-Java.git",
         "image": "/images/hanabi.png"
+      },
+      "lighter": {
+        "title": "Lighter",
+        "description": "Projet de 1ère année de BUT Informatique de compression de fichier texte par la méthode de Huffman.",
+        "tags": ["Java", "JavaFX"],
+        "link": "https://github.com/JulesVialas/Compression-Huffman",
+        "image": "/images/lighter.png"
+      },
+      "museoflow": {
+        "title": "MuseoFlow",
+        "description": "Projet de 2ème année de BUT Informatique permettant la gestion des visites d'un musée et l’exportation de toutes les données dans un format CSV.",
+        "tags": ["PHP", "CSS", "JavaScript", "Base de données"],
+        "link": "https://github.com/AurelienValat/S3.D.01-Web",
+        "image": "/images/museoflow.png"
       }
     }
   },

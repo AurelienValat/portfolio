@@ -33,10 +33,24 @@
       },
       "hanabi": {
         "title": "Hanabi",
-        "description": "Java-based recreation of the Hanabi board game (1st-year academic project)",
+        "description": "First-year academic project about the development of the Hanabi board game using Java.",
         "tags": ["Java", "JavaFX"],
         "link": "https://github.com/JulesVialas/Hanabi-Java.git",
         "image": "/images/hanabi.png"
+      },
+      "lighter": {
+        "title": "Lighter",
+        "description": "First-year academic project focused on text file compression using the Huffman method.",
+        "tags": ["Java", "JavaFX"],
+        "link": "https://github.com/JulesVialas/Compression-Huffman",
+        "image": "/images/lighter.png"
+      },
+      "museoflow": {
+        "title": "MuseoFlow",
+        "description": "Second-year academic project for managing museum tours and exporting all data into CSV format.",
+        "tags": ["PHP", "CSS", "JavaScript", "Database"],
+        "link": "https://github.com/AurelienValat/S3.D.01-Web",
+        "image": "/images/museoflow.png"
       }
     }
   },
