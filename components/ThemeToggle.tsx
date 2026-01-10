@@ -5,7 +5,7 @@ import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 
 export function ThemeToggle() {
-    const { theme, setTheme } = useTheme()
+    const { resolvedTheme, setTheme } = useTheme()
     const [mounted, setMounted] = React.useState(false)
 
     // On attend que le composant soit monté pour éviter les erreurs d'affichage
@@ -13,14 +13,14 @@ export function ThemeToggle() {
         setMounted(true)
     }, [])
 
-    if (!mounted) return <div className="p-2 h-9 w-9" /> // Carré vide le temps du chargement
+    if (!mounted) return <div className="p-2 h-9 w-9" /> // le temps du chargement
 
     return (
         <button
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
             className="p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors relative"
         >
-            {theme === "dark" ? (
+            {resolvedTheme === "dark" ? (
                 <Sun className="h-5 w-5 text-yellow-500" />
             ) : (
                 <Moon className="h-5 w-5 text-slate-700" />
